@@ -21,7 +21,7 @@
         </style>
     </head>
     <body>
-
+        @csrf
     <form action="{{route('CargarUsuario')}}" method="post">
     {{ csrf_field() }}
     <table>
