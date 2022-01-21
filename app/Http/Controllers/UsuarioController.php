@@ -34,7 +34,7 @@ class UsuarioController extends Controller
                         'section'=> 'Mensaje' . $request->message,
                     ];
     
-                   \Mail::to ("nazzetta.roman@gmail.com")->send(new SendData($details));
+                   \Mail::to ("nazzetta.roman@gmail.com")->send(new \App\Mail\SendData($details));
                     //return json_encode(['status'=> 'ok']);
                     return 'Email ENVIADO';
                 }
