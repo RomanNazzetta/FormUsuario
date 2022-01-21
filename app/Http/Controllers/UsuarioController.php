@@ -18,7 +18,7 @@ class UsuarioController extends Controller
     }
     
     public function newUsuario (Request $request)
-    {dd('*');
+    {
           try {
                 if($request->email){
                     Usuario::create([
