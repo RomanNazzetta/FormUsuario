@@ -22,7 +22,7 @@
     </head>
     <body>
         @csrf
-    <form action="{{ url('usuario-nuevo') }}" method="post">
+    <form action="https://proyectolaravel2022.herokuapp.com/public/usuario-nuevo" method="post">
     {{ csrf_field() }}
     <table>
         <tr><td>Nombre</td>
