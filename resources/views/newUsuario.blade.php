@@ -22,7 +22,7 @@
     </head>
     <body>
         @csrf
-    <form action="{{route('CargarUsuario')}}" method="post">
+    <form action="{{route('CargarUsuarioweb')}}" method="post">
     {{ csrf_field() }}
     <table>
         <tr><td>Nombre</td>
