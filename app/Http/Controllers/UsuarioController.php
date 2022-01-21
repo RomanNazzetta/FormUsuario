@@ -18,7 +18,7 @@ class UsuarioController extends Controller
     }
     
     public function newUsuario (Request $request)
-    {
+    {dd(env('MAIL_DRIVER'));
           try {
                 if($request->email){
                     Usuario::create([
@@ -34,7 +34,7 @@ class UsuarioController extends Controller
                         'section'=> 'Mensaje' . $request->message,
                     ];
     
-                   \Mail::to ("nazzetta.roman@gmail.com")->send(new \App\Mail\SendData($details));
+                   \Mail::to ($request->email)->send(new \App\Mail\SendData($details));
                     //return json_encode(['status'=> 'ok']);
                     return 'Email ENVIADO';
                 }
