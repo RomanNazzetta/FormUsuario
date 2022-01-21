@@ -18,7 +18,7 @@ class UsuarioController extends Controller
     }
     
     public function newUsuario (Request $request)
-    {dd(env('MAIL_DRIVER'));
+    {
           try {
                 if($request->email){
                     Usuario::create([
