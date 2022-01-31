@@ -29,4 +29,4 @@ route::get('/usuario-list', "App\Models\Usuario\UsuarioController@showList");
 Route::post ('/usuario-nuevo', "App\http\controllers\UsuarioControllerr@newUsuario")->name('CargarUsuario');
 
 
-route::post('/usuario-form', "App\Http\Controllers\UsuarioController@Form");
+//Route::post('/usuario-form', "App\Http\Controllers\UsuarioController@Form");
