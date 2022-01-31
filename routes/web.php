@@ -25,7 +25,7 @@ Route::post ( '/usuario' , "App\Http\Controllers\UsuarioController@showList");
 */
 //Esto es lo que tiene el profe en el ejemplo de la clase de apoyo
 //Route::get ('/article-new', "app\http\controllers\articlecontroller@articlenew");
-route::get('/usuario-list', "App\Models\Usuario\UsuarioController@showList");
+route::post('/usuario-list', "App\Models\Usuario\UsuarioController@showList");
 Route::post ('/usuario-nuevo', "App\http\controllers\UsuarioControllerr@newUsuario")->name('CargarUsuario');
 
 
