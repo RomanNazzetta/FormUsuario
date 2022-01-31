@@ -14,7 +14,7 @@ use App\Http\Controllers\UsuarioController;
 |
 */
 
-Route::get('/', function () {
+Route::post('/', function () {
     return view('welcome');
 });
 Route::get ( '/usuario' , "App\Http\Controllers\UsuarioController@showList");
@@ -29,4 +29,4 @@ route::get('/usuario-list', "App\Models\Usuario\UsuarioController@showList");
 Route::post ('/usuario-nuevo', "App\http\controllers\UsuarioControllerr@newUsuario")->name('CargarUsuario');
 
 
-//Route::post('/usuario-form', "App\Http\Controllers\UsuarioController@Form");
+Route::post('/usuario-form', "App\Http\Controllers\UsuarioController@Form");
