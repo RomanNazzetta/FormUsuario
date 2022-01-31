@@ -17,7 +17,7 @@ use App\Http\Controllers\UsuarioController;
 Route::post('/', function () {
     return view('welcome');
 });
-Route::get ( '/usuario' , "App\Http\Controllers\UsuarioController@showList");
+Route::post ( '/usuario' , "App\Http\Controllers\UsuarioController@showList");
 //Route::get ('usuario-list', UsuarioController::class . '@showList');
 /*Route::get('/usuario-list', function () {
     return view('usuario-list','UsuarioController@showList');
