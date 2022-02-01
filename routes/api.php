@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-//use App\Http\Controllers\ApiUsuariosController;
+use App\Http\Controllers\ApiUsuariosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->post('/user', function (Request $request) {
     return $request->user();
 });
 
 //Route::post('/saveUsuarios', 'App\Http\Controllers\ApiUsuariosController@saveUsuarios');
 
-Route::post ('/usuario-nuevo', "App\Http\Controllers\UsuarioController@newUsuario")->name('CargarUsuario');
+Route::get ('/usuario-nuevo', "App\Http\Controllers\UsuarioController@newUsuario")->name('CargarUsuario');

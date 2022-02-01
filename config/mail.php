@@ -96,6 +96,11 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+
+    'username' => env('roman.agustin.2022@gmail.com'),
+    'password' => env('kqcjomgpfklwmdu'),
+
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings
