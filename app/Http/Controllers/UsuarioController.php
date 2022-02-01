@@ -1,10 +1,10 @@
 <?php
 
-namespace App\http\Controllers;
+namespace App\Http\Controllers;
 use App\Models\Usuario;
 use Illuminate\Http\Request;
 
-class UsuarioController extends Controller
+class UsuarioController extends Controllers
 {
     public function showList ()
     {
