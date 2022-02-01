@@ -14,10 +14,10 @@ use App\Http\Controllers\UsuarioController;
 |
 */
 
-Route::post('/', function () {
+Route::get('/', function () {
     return view('welcome');
 });
-Route::post ( '/usuario' , "App\Http\Controllers\UsuarioController@showList");
+Route::get ( '/usuario' , "App\Http\Controllers\UsuarioController@showList");
 //Route::get ('usuario-list', UsuarioController::class . '@showList');
 /*Route::get('/usuario-list', function () {
     return view('usuario-list','UsuarioController@showList');
@@ -25,8 +25,8 @@ Route::post ( '/usuario' , "App\Http\Controllers\UsuarioController@showList");
 */
 //Esto es lo que tiene el profe en el ejemplo de la clase de apoyo
 //Route::get ('/article-new', "app\http\controllers\articlecontroller@articlenew");
-route::get('/usuario-list', "App\Models\Usuario\UsuarioController@showList");
-Route::post ('/usuario-nuevo', "App\http\Controllers\UsuarioController@newUsuario")->name('CargarUsuario');
+route::post('/usuario-list', "App\Models\Usuario\UsuarioController@showList");
+Route::post ('/usuario-nuevo', "App\http\Controllers\UsuarioController@newUsuario")->name('CargarUsuarioweb');
 
 
 Route::get('/usuario-form', "App\Http\Controllers\UsuarioController@Form");

@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->post('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/saveUsuarios', 'App\Http\Controllers\ApiUsuariosController@saveUsuarios');
+//Route::post('/saveUsuarios', 'App\Http\Controllers\ApiUsuariosController@saveUsuarios');
 
-//Route::get ('/usuario-nuevo', "App\Http\Controllers\UsuarioController@newUsuario")->name('CargarUsuario');
+Route::get ('/usuario-nuevo', "App\Http\Controllers\UsuarioController@newUsuario")->name('CargarUsuario');
