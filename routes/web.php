@@ -26,7 +26,7 @@ Route::get ( '/usuario' , "App\Http\Controllers\UsuarioController@showList");
 //Esto es lo que tiene el profe en el ejemplo de la clase de apoyo
 //Route::get ('/article-new', "app\http\controllers\articlecontroller@articlenew");
 route::post('/usuario-list', "App\Models\Usuario\UsuarioController@showList");
-Route::get ('/usuario-nuevo', "App\Http\Controllers\UsuarioController@newUsuario")->name('CargarUsuarioweb');
+Route::post ('/usuario-nuevo', "App\Http\Controllers\UsuarioController@newUsuario")->name('CargarUsuarioweb');
 
 
 Route::get('/usuario-form', "App\Http\Controllers\UsuarioController@Form");
